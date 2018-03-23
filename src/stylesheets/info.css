@@ -1,0 +1,30 @@
+.user-info {
+  display: flex;
+  align-items: center;
+}
+
+.user-info div {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  margin-left: 5vw;
+  height: 5vw;
+}
+
+.user-info span {
+  font-size: 2rem;
+}
+
+.user-info img {
+  margin-left: 2vw;
+  width: 10vw;
+  height: 10vw;
+}
+
+.user-info div .id {
+  color: #B71C1C;
+}
+
+.user-info div .login {
+  color: #FBC02D
+}

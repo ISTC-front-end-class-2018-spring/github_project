@@ -1,0 +1,6 @@
+.data {
+  display: flex;
+  align-items: center;
+  background-color: #212121;
+  height: 14vw;
+}
