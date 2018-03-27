@@ -20,6 +20,12 @@ class App extends Component {
     let user = null;
     try {
       const res = await fetch(`${URL}${userName}`);
+      
+      if (res.status !== 200){
+        this.setState({user: 'not found'});
+        return;
+      }
+        
       user = await res.json();
     }
     catch(e){}

@@ -4,3 +4,9 @@
   background-color: #212121;
   height: 14vw;
 }
+
+.data .user-not-found {
+  color: #B71C1C;
+  margin: auto;
+  font-size: 2rem;
+}
