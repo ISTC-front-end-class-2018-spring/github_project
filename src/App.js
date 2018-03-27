@@ -25,7 +25,7 @@ class App extends Component {
       const res = await fetch(`${URL}${userName}`);
       
       if (res.status !== 200){
-        this.setState({user: 'not found'});
+        this.setState({user: 'not found', loading: false});
         return;
       }
         
