@@ -2,6 +2,8 @@ import React, { Component } from 'react';
 import Data from './components/data';
 import Inputs from './components/inputs';
 import Loading from './components/loading';
+import Repositories from './components/repositories';
+
 import loadingGif from './images/loading.gif';
 
 const URL = 'https://api.github.com/users/';
@@ -50,6 +52,7 @@ class App extends Component {
           clickHandler={this.clickHandler}
         />
         <Data {...{user}}/>
+        {user && <Repositories reposUrl={user.repos_url}/>}
       </div>
     );
   }
