@@ -1,4 +1,8 @@
 import React from 'react';
+import Repo from './repo';
+import Loading from '../images/repo_loading.gif';
+
+import '../stylesheets/repositories.css';
 
 export default
 class Repositories extends React.PureComponent {
@@ -22,14 +26,12 @@ class Repositories extends React.PureComponent {
     const {loading, repos} = this.state;
 
     return (
-      loading ? <p>LOADING</p> : 
-      <div className="repositories">
-        {
-          repos.map(({name}) =>(
-            <p key={name}>{name}</p>
+      <div className="repositories">{
+        loading ? <img src={Loading} alt="" /> : 
+          repos.map(repo =>(
+            <Repo {...{key: repo.name, repo, userName: this.props.userName}} />
           ))
-        }
-      </div>
+      }</div>
     );
 
     

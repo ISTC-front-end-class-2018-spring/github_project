@@ -52,7 +52,7 @@ class App extends Component {
           clickHandler={this.clickHandler}
         />
         <Data {...{user}}/>
-        {user && <Repositories reposUrl={user.repos_url}/>}
+        {user && <Repositories userName={user.login} reposUrl={user.repos_url}/>}
       </div>
     );
   }

@@ -1,0 +1,18 @@
+.repo {
+  width: 97%;
+  height: 2rem;
+  margin-top: .3rem;
+  margin-bottom: .3rem;
+  display: flex;
+  line-height: 2rem;
+  background-color: #212121;
+  border-radius: 3px;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.repo span {
+  font-size: 1.2rem;
+  margin-left: 1rem;
+  color: #FBC02D;
+}
